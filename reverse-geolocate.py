@@ -59,7 +59,7 @@ OR Actor2Code LIKE "%UIG%"
 uighur_table = sqldf(q,globals())
 print uighur_table.head()
 print uighur_table.info()
-uighur_table.to_csv('uighur_table.csv')
+uighur_table.to_csv('uighur_table.csv', index=False)
 
 
 
