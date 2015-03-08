@@ -48,7 +48,7 @@ WHERE Location LIKE '%Xinjiang%'
 xinjiang_table = sqldf(q,globals())
 print xinjiang_table.head()
 print xinjiang_table.info()
-xinjiang_table.to_csv('xinjiang_table.csv')
+xinjiang_table.to_csv('xinjiang_table.csv', index=False)
 
 
 q = """
