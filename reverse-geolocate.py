@@ -6,8 +6,8 @@ import time
 
 os.chdir('C:\\Users\Allen\Desktop\GDELT')
 
-master = pd.read_csv('master_sub_table_b.csv',sep=',',header=False,encoding='utf-8',low_memory=False)
-master = master.drop('Unnamed: 0',1)
+master = pd.read_csv('master_table.csv',sep=',',header=False,encoding='utf-8',low_memory=False)
+# master = master.drop('Unnamed: 0',1)
 
 q = """
 SELECT DISTINCT ActionGeo_Lat, ActionGeo_Long

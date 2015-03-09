@@ -51,6 +51,6 @@ sub_table = sqldf(q,globals())
 print sub_table.head()
 print sub_table.info()
 
-sub_table.to_csv('sub_table.csv')
+sub_table.to_csv('sub_table.csv', index=False)
 
 
